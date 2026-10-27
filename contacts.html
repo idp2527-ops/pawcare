@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Контакти — PawCare</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="wrap top">
+  <a class="logo" href="index.html"><i><span>🐾</span></i><div><b>PawCare</b><small>ветеринарна клініка</small></div></a>
+  <nav><a href="index.html">Головна</a><a href="services.html">Послуги</a><a href="about.html">Про нас</a><a href="contacts.html" class=on>Контакти</a></nav>
+  <a class="btn small" href="tel:+380931234567">📞 +38 (093) 123 45 67</a>
+</div></header>
+<main class="wrap">
+<div class="eyebrow">Контакти</div>
+<div class="head"><h2>Запис на прийом і відгуки</h2><p>Заповніть форму — ми зателефонуємо для підтвердження часу візиту.</p></div>
+<section class="two">
+  <div class="box"><h3 style="margin-bottom:14px">Онлайн-запис</h3><div id="bookInline"></div></div>
+  <div>
+    <div class="box" style="margin-bottom:18px"><h3 style="margin-bottom:10px">Ваші заявки</h3><div class="list" id="myList"></div></div>
+    <h3 style="margin-bottom:10px">Поширені запитання</h3>
+    <details><summary>Чи потрібно записуватися заздалегідь?</summary><p>Так, запис дозволяє уникнути черги, але в екстрених випадках ми приймаємо без запису.</p></details>
+    <details><summary>Чи можна викликати лікаря додому?</summary><p>Так, послуга «Виклик лікаря додому» доступна щодня з 08:00 до 20:00.</p></details>
+    <details><summary>Як підготувати улюбленця до візиту?</summary><p>Візьміть ветеринарний паспорт і, якщо є, попередні результати аналізів.</p></details>
+  </div>
+</section>
+<div class="eyebrow">Відгуки</div>
+<h2>Ваші враження</h2>
+<section class="two">
+  <div class="box"><form class="f" id="reviewForm" novalidate>
+    <div class="row"><label>Ім'я<input name="name"></label><label>Улюбленець<input name="pet" placeholder="Кличка, порода"></label></div>
+    <label>Оцінка<select name="rate"><option value="5">5 ★</option><option value="4">4 ★</option><option value="3">3 ★</option></select></label>
+    <label>Відгук<textarea name="text" rows="4"></textarea></label>
+    <div class="err" id="revErr"></div><button class="btn">Надіслати відгук</button></form></div>
+  <div class="revs" id="revGrid" style="grid-template-columns:1fr"></div>
+</section>
+<section class="contact">
+  <div>
+    <div class="eyebrow" style="color:#9fe0cc;margin:0">Контакти</div>
+    <h2>Ми поруч, коли потрібна допомога</h2>
+    <p>Запишіться на прийом або поставте запитання — адміністратор відповість якнайшвидше.</p>
+    <div class="info">
+      <div><i>📞</i><span><small>Телефон</small><b>+38 (093) 123 45 67</b></span></div>
+      <div><i>📍</i><span><small>Адреса</small><b>м. Київ, вул. Затишна, 12</b></span></div>
+      <div><i>🕗</i><span><small>Графік роботи</small><b>Щодня, 08:00 – 20:00</b></span></div>
+      <div><i>✉️</i><span><small>Електронна пошта</small><b>hello@pawcare.ua</b></span></div>
+    </div>
+    <button class="btn light" data-book>📅 Онлайн-запис</button>
+  </div>
+  <div class="map"><div class="pin">📍 PawCare<br><small>вул. Затишна, 12</small></div></div>
+</section>
+</main>
+<footer><div class="wrap"><span>PawCare — турбота про кожну лапку!</span><span>© 2026 PawCare. Навчальний проєкт.</span></div></footer>
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

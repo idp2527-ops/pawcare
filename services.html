@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Послуги — PawCare</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="wrap top">
+  <a class="logo" href="index.html"><i><span>🐾</span></i><div><b>PawCare</b><small>ветеринарна клініка</small></div></a>
+  <nav><a href="index.html">Головна</a><a href="services.html" class=on>Послуги</a><a href="about.html">Про нас</a><a href="contacts.html">Контакти</a></nav>
+  <a class="btn small" href="tel:+380931234567">📞 +38 (093) 123 45 67</a>
+</div></header>
+<main class="wrap">
+<div class="eyebrow">Послуги та ціни</div>
+<div class="head"><h2>Каталог ветеринарних послуг</h2><p>Оберіть категорію, вид тварини або скористайтеся пошуком. Ціни умовні, демонстраційні.</p></div>
+<div class="bar" id="chips"></div>
+<div class="bar"><input id="q" placeholder="Пошук послуги..."><select id="animal"></select>
+  <select id="sort"><option value="">За замовчуванням</option><option value="asc">Ціна: від дешевих</option><option value="desc">Ціна: від дорогих</option><option value="name">За назвою</option></select></div>
+<p class="found" id="found"></p>
+<section class="svcs" id="svcGrid"></section>
+</main>
+<footer><div class="wrap"><span>PawCare — турбота про кожну лапку!</span><span>© 2026 PawCare. Навчальний проєкт.</span></div></footer>
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
